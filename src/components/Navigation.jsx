@@ -9,9 +9,9 @@ function Navigation({ authUser, signOut }) {
 
   return (
     <>
-      <nav className='flex p-6 bg-sky-600 justify-between items-center'>
-        <h2 className='text-xl text-white font-bold'>
-          <Link to='/' className='flex gap-2 items-center'>
+      <nav className='flex items-center justify-between bg-sky-600 p-6'>
+        <h2 className='text-xl font-bold text-white'>
+          <Link to='/' className='flex items-center gap-2'>
             EVOS LEGENDS
             <img
               className='w-8'
@@ -29,7 +29,7 @@ function Navigation({ authUser, signOut }) {
           }}
           className='flex items-center gap-2'
         >
-          <img className='rounded-full w-10' src={avatar} alt='' />
+          <img className='w-10 rounded-full' src={avatar} alt='' />
           <p className='text-xl'>{name}</p>
           <button className='hidden' type='button' onClick={signOut}>
             Sign out

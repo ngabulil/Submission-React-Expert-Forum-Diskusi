@@ -4,7 +4,7 @@ import ThreadCommentItem from './ThreadCommentItem';
 
 function ThreadCommentList({ comments }) {
   return (
-    <div className='threads-list'>
+    <div>
       {comments.map((comment) => (
         <ThreadCommentItem key={comment.id} {...comment} />
       ))}

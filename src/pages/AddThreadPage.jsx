@@ -15,9 +15,9 @@ function AddThreadPage() {
   };
 
   return (
-    <div className='main-page mt-4'>
-      <div className='w-4/5 mx-auto p-8 bg-white rounded-xl shadow-xl'>
-        <h1 className='text-2xl font-bold mb-5'>Buat Diskusi Baru</h1>
+    <div className='mt-4'>
+      <div className='mx-auto w-4/5 rounded-xl bg-white p-8 shadow-xl'>
+        <h1 className='mb-5 text-2xl font-bold'>Buat Diskusi Baru</h1>
         <ThreadInput addThread={onAddThread} />
       </div>
     </div>

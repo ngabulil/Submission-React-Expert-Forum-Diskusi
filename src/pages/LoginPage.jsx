@@ -12,14 +12,14 @@ function LoginPage() {
   };
 
   return (
-    <div className='m-auto h-screen flex'>
+    <div className='m-auto flex h-screen'>
       <div className='flex w-1/2'>
-        <div className='flex w-full mx-4 my-32 p-7 bg-white rounded-xl shadow-lg items-center'>
+        <div className='mx-4 my-32 flex w-full items-center rounded-xl bg-white p-7 shadow-lg'>
           <div className='w-full'>
-            <div className='text-center font-bold text-2xl'>
-              <h2 className='title-auth'>Login</h2>
+            <div className='text-center text-2xl font-bold'>
+              <h2>Login</h2>
             </div>
-            <div className='wrap-content-auth'>
+            <div>
               <LoginInput login={onLogin} />
               <p>
                 Dont have an account?{' '}
@@ -31,8 +31,8 @@ function LoginPage() {
           </div>
         </div>
       </div>
-      <div className='w-1/2 flex bg-sky-900'>
-        <div className='w-full flex'>
+      <div className='flex w-1/2 bg-sky-900'>
+        <div className='flex w-full'>
           <img
             className='m-auto'
             src='https://upload.wikimedia.org/wikipedia/id/e/e0/EVOS_Esports_Logo_%28SVG%29_-_Vector69Com.svg'

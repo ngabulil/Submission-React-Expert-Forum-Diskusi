@@ -8,38 +8,38 @@ function ThreadInput({ addThread }) {
   const [body, onBodyChange] = useInput('');
 
   return (
-    <div className='wrapper'>
-      <div className='flex flex-col mb-3'>
+    <div>
+      <div className='mb-3 flex flex-col'>
         <label className='font-semibold'>Title</label>
         <input
           placeholder='Masukkan Judul'
-          className='border-2 border-black rounded-md px-2 py-1 text-sm'
+          className='rounded-md border-2 border-black px-2 py-1 text-sm'
           type='text'
           value={title}
           onChange={onTitleChange}
         />
       </div>
-      <div className='flex flex-col mb-3'>
+      <div className='mb-3 flex flex-col'>
         <label className='font-semibold'>Category</label>
         <input
           placeholder='Masukkan Kategori'
-          className='border-2 border-black rounded-md px-2 py-1 text-sm'
+          className='rounded-md border-2 border-black px-2 py-1 text-sm'
           type='text'
           value={category}
           onChange={onCategoryChange}
         />
       </div>
-      <div className='flex flex-col mb-2'>
+      <div className='mb-2 flex flex-col'>
         <label className='font-semibold'>Content</label>
         <textarea
           placeholder='Masukkan Isi Diskusi'
-          className='border-2 border-black rounded-md px-2 py-1 text-sm'
+          className='rounded-md border-2 border-black px-2 py-1 text-sm'
           value={body}
           onChange={onBodyChange}
           rows={5}
         ></textarea>
       </div>
-      <button onClick={() => addThread({ title, category, body })} className='bg-sky-900 text-white w-full rounded-md p-1'>
+      <button onClick={() => addThread({ title, category, body })} className='w-full rounded-md bg-sky-900 p-1 text-white'>
         Create
       </button>
     </div>

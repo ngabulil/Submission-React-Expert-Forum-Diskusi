@@ -24,8 +24,8 @@ function HomePage() {
   console.log('Thread List :', threadList);
 
   return (
-    <div className='w-4/5 mx-auto my-5 px-8 py-6 pb-8 border-2 border-solid border-sky-600 rounded-xl bg-white shadow-xl'>
-      <h1 className='text-3xl font-bold mb-3'>Forum Diskusi</h1>
+    <div className='mx-auto my-5 w-4/5 rounded-xl border-2 border-solid border-sky-600 bg-white px-8 py-6 pb-8 shadow-xl'>
+      <h1 className='mb-3 text-3xl font-bold'>Forum Diskusi</h1>
       <ThreadsList threads={threadList} />
       <Link to='/new' className='fixed bottom-10 right-10 text-blue-900'>
         <BsFillPlusCircleFill size={60} />

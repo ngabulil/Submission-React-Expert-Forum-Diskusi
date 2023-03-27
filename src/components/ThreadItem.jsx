@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function ThreadItem({ id, title, body, category, createdAt, totalComments, user, authUser }) {
   return (
-    <div className='card-thread border-2 mb-2 p-4 rounded-lg border-sky-200'>
+    <div className='mb-2 rounded-lg border-2 border-sky-200 p-4'>
       <Link to={`/threads/${id}`}>
         <p className='text-lg font-bold text-sky-900'>{title}</p>
       </Link>
@@ -16,7 +16,7 @@ function ThreadItem({ id, title, body, category, createdAt, totalComments, user,
       ></p>
       <div className='flex gap-1'>
         <p className='font-semibold'>{user.name}</p>
-        <p className='child-desc'>
+        <p>
           {postedAt(createdAt)} - {totalComments} comments
         </p>
       </div>

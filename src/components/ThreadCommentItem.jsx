@@ -5,8 +5,8 @@ import { postedAt } from '../utils';
 function ThreadCommentItem({ content, createdAt, owner }) {
   console.log({ owner });
   return (
-    <div className='card-comment'>
-      <div className='desc-card-comment'>
+    <div>
+      <div>
         <div className='flex items-center gap-1'>
           <img className='w-8 rounded-full' src={owner.avatar} />
           <p className='font-medium'>{owner.name}</p>

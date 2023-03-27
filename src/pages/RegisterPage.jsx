@@ -15,14 +15,14 @@ function RegisterPage() {
   };
 
   return (
-    <div className='m-auto h-screen flex flex-row-reverse'>
+    <div className='m-auto flex h-screen flex-row-reverse'>
       <div className='flex w-1/2'>
-        <div className='flex w-full mx-4 my-32 p-7 bg-white rounded-xl shadow-lg items-center'>
+        <div className='mx-4 my-32 flex w-full items-center rounded-xl bg-white p-7 shadow-lg'>
           <div className='w-full'>
-            <div className='text-center font-bold text-2xl'>
+            <div className='text-center text-2xl font-bold'>
               <h2 className=''>Register</h2>
             </div>
-            <div className='wrap-content-auth'>
+            <div>
               <RegisterInput register={onRegister} />
               <p>
                 Already have an account?{' '}
@@ -34,8 +34,8 @@ function RegisterPage() {
           </div>
         </div>
       </div>
-      <div className='w-1/2 flex bg-black'>
-        <div className='w-full flex'>
+      <div className='flex w-1/2 bg-black'>
+        <div className='flex w-full'>
           <img className='m-auto' src='https://jurnalapps.co.id/assets/img/content/1573459793_m1-11-1.jpg' alt='' />
         </div>
       </div>

@@ -26,10 +26,10 @@ function DetailPage() {
   }
 
   return (
-    <div className='w-4/5 mx-auto my-5 px-8 py-6 pb-8 border-2 border-solid border-sky-600 rounded-xl bg-white shadow-xl'>
+    <div className='mx-auto my-5 w-4/5 rounded-xl border-2 border-solid border-sky-600 bg-white px-8 py-6 pb-8 shadow-xl'>
       <ThreadDetail {...threadDetail} />
       <ThreadCommentInput addCommentThread={onAddCommentThread} />
-      <p className='text-xl font-semibold mb-4 mt-8'>Comments</p>
+      <p className='mb-4 mt-8 text-xl font-semibold'>Comments</p>
       <ThreadCommentList comments={threadDetail.comments} />
     </div>
   );

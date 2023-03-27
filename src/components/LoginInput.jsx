@@ -8,27 +8,27 @@ function LoginInput({ login }) {
 
   return (
     <form>
-      <div className='flex flex-col mt-2'>
+      <div className='mt-2 flex flex-col'>
         <label className='font-bold'>Email</label>
         <input
-          className='p-2 rounded-md border-2 border-solid border-black'
+          className='rounded-md border-2 border-solid border-black p-2'
           type='email'
           placeholder='Masukkan Email'
           value={email}
           onChange={onEmailChange}
         />
       </div>
-      <div className='flex flex-col mt-2'>
+      <div className='mt-2 flex flex-col'>
         <label className='font-bold'>Password</label>
         <input
-          className='p-2 rounded-md border-2 border-solid border-black'
+          className='rounded-md border-2 border-solid border-black p-2'
           type='password'
           placeholder='Masukkan Password'
           value={password}
           onChange={onPasswordChange}
         />
       </div>
-      <button type='button' className='mt-4 py-2 w-full bg-sky-800 text-white rounded-lg' onClick={() => login({ email, password })}>
+      <button type='button' className='mt-4 w-full rounded-lg bg-sky-800 py-2 text-white' onClick={() => login({ email, password })}>
         Login
       </button>
     </form>

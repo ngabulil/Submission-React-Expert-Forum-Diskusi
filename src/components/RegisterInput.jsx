@@ -9,21 +9,21 @@ function RegisterInput({ register }) {
 
   return (
     <form>
-      <div className='flex flex-col mt-2'>
+      <div className='mt-2 flex flex-col'>
         <label className='font-bold'>Name</label>
-        <input className='p-2 rounded-md border-2 border-solid border-black' type='text' value={name} onChange={onNameChange} />
+        <input className='rounded-md border-2 border-solid border-black p-2' type='text' value={name} onChange={onNameChange} />
       </div>
-      <div className='flex flex-col mt-2'>
+      <div className='mt-2 flex flex-col'>
         <label className='font-bold'>Email</label>
-        <input className='p-2 rounded-md border-2 border-solid border-black' type='email' value={email} onChange={onEmailChange} />
+        <input className='rounded-md border-2 border-solid border-black p-2' type='email' value={email} onChange={onEmailChange} />
       </div>
-      <div className='flex flex-col mt-2'>
+      <div className='mt-2 flex flex-col'>
         <label className='font-bold'>Password</label>
-        <input className='p-2 rounded-md border-2 border-solid border-black' type='password' value={password} onChange={onPasswordChange} />
+        <input className='rounded-md border-2 border-solid border-black p-2' type='password' value={password} onChange={onPasswordChange} />
       </div>
       <button
         type='button'
-        className='mt-4 py-2 w-full bg-sky-800 text-white rounded-lg'
+        className='mt-4 w-full rounded-lg bg-sky-800 py-2 text-white'
         onClick={() => register({ name, email, password })}
       >
         Register

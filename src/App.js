@@ -45,11 +45,11 @@ function App() {
 
   return (
     <>
-      <div className='app-container'>
+      <div>
         <header>
           <Navigation authUser={authUser} signOut={onSignOut} />
         </header>
-        <main className='main'>
+        <main>
           <Loading />
           <Routes>
             <Route path='/' element={<HomePage />} />

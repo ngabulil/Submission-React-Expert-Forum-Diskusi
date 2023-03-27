@@ -7,14 +7,14 @@ function ThreadCommentInput({ addCommentThread }) {
 
   return (
     <div>
-      <p className='font-medium text-lg'>Comment</p>
+      <p className='text-lg font-medium'>Comment</p>
       <textarea
         value={content}
         onChange={onContentChange}
-        className='w-full border-2 border-solid border-black rounded-md p-2'
+        className='w-full rounded-md border-2 border-solid border-black p-2'
         rows={5}
       ></textarea>
-      <button className='w-full bg-sky-900 text-white p-1 rounded-md hover' onClick={() => addCommentThread({ content })}>
+      <button className='w-full rounded-md bg-sky-900 p-1 text-white' onClick={() => addCommentThread({ content })}>
         Send
       </button>
     </div>
