@@ -11,15 +11,15 @@ function RegisterInput({ register }) {
     <form>
       <div className='mt-2 flex flex-col'>
         <label className='font-bold'>Name</label>
-        <input className='rounded-md border-2 border-solid border-black p-2' type='text' value={name} onChange={onNameChange} />
+        <input placeholder='Masukkan Username' className='rounded-md border-2 border-solid border-black p-2' type='text' value={name} onChange={onNameChange} />
       </div>
       <div className='mt-2 flex flex-col'>
         <label className='font-bold'>Email</label>
-        <input className='rounded-md border-2 border-solid border-black p-2' type='email' value={email} onChange={onEmailChange} />
+        <input placeholder='Masukkan Email' className='rounded-md border-2 border-solid border-black p-2' type='email' value={email} onChange={onEmailChange} />
       </div>
       <div className='mt-2 flex flex-col'>
         <label className='font-bold'>Password</label>
-        <input className='rounded-md border-2 border-solid border-black p-2' type='password' value={password} onChange={onPasswordChange} />
+        <input placeholder='Masukkan Password' className='rounded-md border-2 border-solid border-black p-2' type='password' value={password} onChange={onPasswordChange} />
       </div>
       <button
         type='button'

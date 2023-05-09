@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -31,12 +31,13 @@ function Navigation({ authUser, signOut }) {
         >
           <img className='w-10 rounded-full' src={avatar} alt='' />
           <p className='text-xl'>{name}</p>
-          <button className='hidden' type='button' onClick={signOut}>
-            Sign out
-          </button>
+          {/* <button className='hidden' type='button' onClick={signOut}>
+            Logout
+          </button> */}
         </div>
       </nav>
       <div
+        id='profile'
         onMouseEnter={() => {
           setMenu(true);
         }}
